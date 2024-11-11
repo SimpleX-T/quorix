@@ -430,8 +430,10 @@ bot.command("learn", async (ctx) => {
 	});
 });
 bot.command("review", async (ctx) => {
-	const msg = ctx.match;
-	if (msg === "") {
+	// Get the message text after the /review command
+	const msg = ctx.message.text.split("/review")[1].trim();
+
+	if (!msg) {
 		await ctx.reply(
 			"You know you didn't actually send a message right?🤔",
 			{
@@ -440,21 +442,16 @@ bot.command("review", async (ctx) => {
 		);
 		return;
 	}
+
 	const { first_name, id } = ctx.from;
-	await bot.api.sendMessage(
-		devID,
-		`${first_name} sent a review :
-"${msg}"`
-	);
-	await bot.api.sendMessage(
-		id,
-		`${first_name} sent a review :
-"${msg}"`
-	);
+	await bot.api.sendMessage(devID, `${first_name} sent a review:\n"${msg}"`);
+
 	await ctx.reply("Review Sent😁", {
 		reply_markup: keyboard,
 		reply_to_message_id: ctx.message.message_id,
 	});
+
+	await bot.api.sendMessage(id, `${first_name} sent a review:\n"${msg}"`);
 });
 bot.command("read", async (ctx) => {
 	if (!ctx.config?.isGroupChat) return;
