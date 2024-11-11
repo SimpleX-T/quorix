@@ -440,9 +440,14 @@ bot.command("review", async (ctx) => {
 		);
 		return;
 	}
-	const { first_name } = ctx.from;
+	const { first_name, id } = ctx.from;
 	await bot.api.sendMessage(
 		devID,
+		`${first_name} sent a review :
+"${msg}"`
+	);
+	await bot.api.sendMessage(
+		id,
 		`${first_name} sent a review :
 "${msg}"`
 	);
