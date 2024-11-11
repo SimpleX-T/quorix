@@ -38,7 +38,7 @@ export const infoKeyboard = new InlineKeyboard()
 export const extraKeyboard = new Keyboard()
 	.text("❓ FAQ")
 	.text("🔨 Buildathon")
-	.text("✈️ Jesse's Visit")
+	.text("✈️ Events")
 	.row()
 	.text("🔙 Back", "back")
 	.resized();

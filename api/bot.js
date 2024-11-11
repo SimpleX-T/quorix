@@ -571,7 +571,7 @@ bot.on("message:text", async (ctx) => {
 				case "/help":
 					response = returnMsgs(first_name).help;
 					break;
-				case "✈️ Jesse's Visit":
+				case "✈️ Events":
 					response = "/roundsInfo";
 					response = returnMsgs(first_name).info;
 					break;
