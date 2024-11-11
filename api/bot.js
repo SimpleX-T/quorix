@@ -536,7 +536,7 @@ bot.on("message:text", async (ctx) => {
 					response = returnMsgs(first_name).faq;
 					kb = faqKeyboard;
 					break;
-				case "I'm a developer 🧑‍💻, How do i build on Base?🤔":
+				case "I'm a developer 🧑‍💻, How do i build on ICP?🤔":
 					text = "/faq";
 					response = returnMsgs(first_name).q2;
 					kb = faqKeyboard;

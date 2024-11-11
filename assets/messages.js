@@ -126,6 +126,40 @@ Visit https://dfinity.org/grants for more info.`,
 		faq: `Have some questions ${first_name}? 🤔
 Which of these do you need answers to?
 If you can't find your question below, just type it out, and I'd be happy to help! 😁`,
+		q1: `No worries! The Internet Computer Protocol (ICP) is a powerful and easy-to-use blockchain designed for building Web3 dapps (decentralized applications). Here’s a simple roadmap to get you started:
+
+Learn What a Blockchain Is: ICP is a decentralized network, like a cloud-based "supercomputer," which means it’s powered by multiple computers working together instead of a single server.
+
+Explore ICP Basics: ICP allows developers to build scalable dapps directly on the internet without traditional cloud servers.
+Set Up a Wallet: Try using an ICP-compatible wallet like Plug or Stoic Wallet. This wallet will let you store, send, and receive ICP tokens.
+Discover dApps on ICP: ICP hosts a growing number of unique dapps. You can explore some of these at the Dfinity Foundation’s website or sites like Distrikt.
+Join the Community: Follow ICP groups on Twitter or Discord, where beginners are always welcome to ask questions and learn from others.
+You’re not alone—everyone was new at some point! Let me know if there’s anything specific you’d like to dive into. 😊
+
+`,
+		q2: `Great! ICP is a powerful platform for building decentralized applications, and getting started as a developer is straightforward:
+
+Set Up Your Development Environment:
+
+Install DFX (the DFINITY SDK) to start coding on ICP.
+Write your backend logic in Motoko (a language created for ICP) or Rust (for more advanced use cases).
+Deploy Canisters:
+
+ICP uses "canisters," which are like smart contracts or containers that hold your code and data.
+Create and deploy canisters using DFX, which manages all the processes for you on ICP's decentralized network.
+Integrate Frontend and Backend:
+
+Use standard web technologies (HTML, CSS, JavaScript, or frameworks like React) for the frontend.
+For backend logic, connect with your canisters through JavaScript libraries provided by DFINITY.
+ICP Tools & Resources:
+
+Canister SDK: Get familiar with DFX commands and canister APIs.
+Documentation: Check out the Internet Computer developer docs for detailed guidance.
+Motoko Playground: Use this browser-based tool to try out Motoko code without setup (Motoko Playground).
+Test & Deploy:
+
+Test your dapp locally before deploying it to the main ICP network. Once it’s ready, use DFX to deploy it live.
+ICP’s ecosystem is developer-friendly and ready for experimentation. Don’t hesitate to reach out for support through community channels or developer forums!`,
 		start: `🚀 Welcome, ${first_name}!🚀
 I'm your ICP Onboarding Assistant.
 Let's get you started on the Internet Computer Protocol!
